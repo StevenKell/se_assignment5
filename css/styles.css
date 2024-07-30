@@ -1,3 +1,10 @@
-#outputDecor{
-    font-size: 144px;
+body {
+    align-items: center;
+}
+
+#bmibackground {
+margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: cyan;
 }
