@@ -2,8 +2,7 @@
 let submitbtn = document.querySelector('.submitbtn');
 let name1 = 0;
 
-const bmi1output = document.getElementById('bmi1output');
-const bmi2output = document.getElementById('bmi2output');
+
 const bmi3output = document.getElementById('bmi3output');
 
 
@@ -25,7 +24,6 @@ submitbtn.addEventListener('click', function () {
 
     /* BMI 1 output */
     let bmi1 = Math.round(calcBMI(weight1, height1));
-    bmi1output.textContent = bmi1;
 
 
     name2 = document.getElementById("name2").value;
@@ -39,20 +37,18 @@ submitbtn.addEventListener('click', function () {
 
     /* BMI 2 output */
     let bmi2 = Math.round(calcBMI(weight2, height2));
-    bmi2output.textContent = bmi2;
     /* Comapare BMI and outputs which is */
     
 
     if (bmi1 > bmi2) {
-        bmi3output.textContent = `${name1}s BMI at ${bmi1} is higher than ${name2}s `;
+        bmi3output.textContent = `${name1}s BMI at ${bmi1} is higher than ${name2}s, who is at ${bmi2}. `;
     } else {
-        bmi3output.textContent = `${name2}s BMI at ${bmi2} is higher than ${name1}s `;
+        bmi3output.textContent = `${name2}s BMI at ${bmi2} is higher than ${name1}s, who is at ${bmi1}. `;
 
     }
     
 
-    console.log(resultHolder)
-    bmi3output.textContent = resultHolder;
+    
 
 
 }
