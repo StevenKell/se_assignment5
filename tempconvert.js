@@ -12,6 +12,6 @@ console.log(fahrenheitOutPut(45));
 
 tempsubmitbtn.addEventListener('click', function () {
 
-    fout.innerHTML = 6;  /*fahrenheitOutPut('celsiusInput');*/
+    fout.innerHTML = fahrenheitOutPut('celsiusInput');
     console.log("fahrenheitOutPut")
 })

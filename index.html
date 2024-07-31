@@ -24,71 +24,75 @@
   </header>
 
   <main>
-  <div class="border rounded text-center " id="bmibackground">
-      <div class="row">
-        <h1 class="display-4 text-center">Body Mass Index Calculator</h1>
+    <div class="container">
+      <div class="border rounded text-center col-md-6" id="bmibackground">
+        <div class="row">
+          <h1 class="display-4 text-center">Body Mass Index Calculator</h1>
 
-        <div class="container col-md-2 me-0">
+          <div class="container col-md-2 me-0">
 
-          <div class="mb-2">
-            <label for="exampleInputEmail1" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name1" aria-describedby="emailHelp">
+            <div class="mb-2">
+              <label for="exampleInputEmail1" class="form-label">Name</label>
+              <input type="text" placeholder="Name" id="name1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-2">
+              <label for="exampleInputPassword1" class="form-label">Weight</label>
+              <input type="number" placeholder="Weight" id="weight1">
+            </div>
+            <div class="mb-2">
+              <label for="exampleInputPassword1" class="form-label">Height</label>
+              <input type="number" placeholder="Height" id="height1">
+            </div>
           </div>
-          <div class="mb-2">
-            <label for="exampleInputPassword1" class="form-label">Weight</label>
-            <input type="number" class="form-control" id="weight1">
-          </div>
-          <div class="mb-2">
-            <label for="exampleInputPassword1" class="form-label">Height</label>
-            <input type="number" class="form-control" id="height1">
-          </div>
 
 
+          <div class="container col-md-2">
+            <div class="mb-2">
+              <label for="exampleInputEmail1" class="form-label">Name</label>
+              <input type="text" placeholder="Name" id="name2" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-2">
+              <label for="exampleInputPassword1" class="form-label">Weight</label>
+              <input type="number" placeholder="Weight" id="weight2">
+            </div>
+            <div class="mb-2">
+              <label for="exampleInputPassword1" class="form-label">Height</label>
+              <input type="number" placeholder="Height" id="height2">
+            </div>
+
+
+            <button type="submit" class="submitbtn btn btn-primary mt-5">Submit</button>
+
+          </div>
         </div>
-        <div class="container col-md-2">
-          <div class="mb-2">
-            <label for="exampleInputEmail1" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name2" aria-describedby="emailHelp">
-          </div>
-          <div class="mb-2">
-            <label for="exampleInputPassword1" class="form-label">Weight</label>
-            <input type="number" class="form-control" id="weight2">
-          </div>
-          <div class="mb-2">
-            <label for="exampleInputPassword1" class="form-label">Height</label>
-            <input type="number" class="form-control" id="height2">
-          </div>
 
 
-          <button type="submit" class="submitbtn btn btn-primary mt-5">Submit</button>
+        <div id="outDecor" class="container row-md-6 text-center">
+          <!--BMI output elements-->
 
+          <h1> <span id="bmi3output" class="badge rounded-pill text-bg-secondary">Results</span></h1>
         </div>
       </div>
 
 
-      <div id="outDecor" class="container row-md-6 text-center">
-        <!--BMI output elements-->
+      <div class="tempconvert text-center">
+        <h1 class="display-4 text-center">Temperature converter</h1>
 
-        <h1> <span id="bmi3output" class="badge rounded-pill text-bg-secondary">Results</span></h1>
+        <div class="mb-2">
+          <label for="exampleInputEmail1" class="form-label">Input Fahrenheit temperature</label>
+          <input type="number" placeholder="Tempature in Fahrenheit" id="inputCelsius" aria-describedby="emailHelp">
+        </div>
+        <button type="submit" class="tempsubmitbtn btn btn-primary mt-5">Submit</button>
+        <div id="fout"></div>
+
       </div>
     </div>
-    <div class="tempconvert text-center">
-    <h1 class="display-4 text-center">Temperature converter</h1>
-
-    <div class="mb-2">
-      <label for="exampleInputEmail1" class="form-label">Input Fahrenheit temperature</label>
-      <input type="text" class="form-control" id="inputCelsius" aria-describedby="emailHelp">
-    </div>
-    <button type="submit" class="tempsubmitbtn btn btn-primary mt-5">Submit</button>
-    <div id="fout"></div>
-  </div>
-  
-</main>
+  </main>
 
   <footer>
 
   </footer>
-  
+
   <script src="tempconvert.js"></script>
   <script src="scripts.js"></script>
 </body>
